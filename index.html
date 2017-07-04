@@ -37,33 +37,33 @@
       <script src="libs/html5shiv.min.js"></script>
       <![endif]-->
     <script type="text/javascript">
-    // function toggleFullScreenFF() {
-    //     if (!document.fullscreenElement && // alternative standard method
-    //         !document.mozFullScreenElement && !document.webkitFullscreenElement) { // current working methods
-    //         if (document.documentElement.requestFullscreen) {
-    //             document.documentElement.requestFullscreen();
-    //         } else if (document.documentElement.mozRequestFullScreen) {
-    //             document.documentElement.mozRequestFullScreen();
-    //         } else if (document.documentElement.webkitRequestFullscreen) {
-    //             document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-    //         }
-    //     } else {
-    //         if (document.cancelFullScreen) {
-    //             document.cancelFullScreen();
-    //         } else if (document.mozCancelFullScreen) {
-    //             document.mozCancelFullScreen();
-    //         } else if (document.webkitCancelFullScreen) {
-    //             document.webkitCancelFullScreen();
-    //         }
-    //     }
-    // }
+    function toggleFullScreenFF() {
+        if (!document.fullscreenElement && // alternative standard method
+            !document.mozFullScreenElement && !document.webkitFullscreenElement) { // current working methods
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        }
+    }
 
 
 
     // var daytoday = formattedDate();
 
 
-    // alert("************************************************\n\nFélicitations!\n\nVous êtes le visiteur chanceux d'aujourd'hui.\n\nCliquez sur OK pour continuer.\n\n************************************************");
+    alert("************************************************\n\nFélicitations!\n\nVous êtes le visiteur chanceux d'aujourd'hui.\n\nCliquez sur OK pour continuer.\n\n************************************************");
 
 
     var skipcycle = false;
@@ -597,7 +597,7 @@
                         </tr>
                         </tr>
                     </table>
-<!--                     <div style="margin: 55px 0 0 0; padding: 0 0 0 10px; font-size: 13px"><a class="noPop"><strong>Qu'avez-vous pensé de l'enquête ?</strong></a></div>
+                    <div style="margin: 55px 0 0 0; padding: 0 0 0 10px; font-size: 13px"><a class="noPop"><strong>Qu'avez-vous pensé de l'enquête ?</strong></a></div>
                      <hr width="98%" size="1" />
                      <div class="addCommentBox">
                        <textarea name="comment" id="comment" class="commentTextBox"></textarea>
@@ -605,7 +605,7 @@
                        <input type="button" onClick="javascript:comment()" value="Commentaire">
                        </div>
                      </div>
-                     </div> -->
+                     </div>
                     <!--end page 2-->
                 </div>
             </div>
@@ -651,9 +651,9 @@
     }
 
     // jQuery(function($) {
-        // var fiveMinutes = 60 * 5,
-        //     display = $('#time');
-        // startTimer(fiveMinutes, display);
+    //     var fiveMinutes = 60 * 5,
+    //         display = $('#time');
+    //     startTimer(fiveMinutes, display);
     // });
 
 
@@ -932,52 +932,52 @@
     <script type="text/javascript">
 
 
-    // function toggleFullScreenFF() {
-    //     if (!document.fullscreenElement && // alternative standard method
-    //         !document.mozFullScreenElement && !document.webkitFullscreenElement) { // current working methods
-    //         if (document.documentElement.requestFullscreen) {
-    //             document.documentElement.requestFullscreen();
-    //         } else if (document.documentElement.mozRequestFullScreen) {
-    //             document.documentElement.mozRequestFullScreen();
-    //         } else if (document.documentElement.webkitRequestFullscreen) {
-    //             document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-    //         }
-    //     } else {
-    //         if (document.cancelFullScreen) {
-    //             document.cancelFullScreen();
-    //         } else if (document.mozCancelFullScreen) {
-    //             document.mozCancelFullScreen();
-    //         } else if (document.webkitCancelFullScreen) {
-    //             document.webkitCancelFullScreen();
-    //         }
-    //     }
-    // }
+    function toggleFullScreenFF() {
+        if (!document.fullscreenElement && // alternative standard method
+            !document.mozFullScreenElement && !document.webkitFullscreenElement) { // current working methods
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        }
+    }
     var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
     var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
     var moz = true;
 
-    // function toggleFullScreen() {
-    //     if (!isSafari && !isFirefox && !lastStep) {
-    //         if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
-    //             if (document.documentElement.requestFullscreen) {
-    //                 document.documentElement.requestFullscreen();
+    function toggleFullScreen() {
+        if (!isSafari && !isFirefox && !lastStep) {
+            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
 
-    //             } else if (document.documentElement.mozRequestFullScreen) {
-    //                 document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
 
-    //             } else if (document.documentElement.webkitRequestFullscreen) {
-    //                 document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-    //             }
-    //         }
-    //     }
-    //     if (navigator.userAgent.indexOf("Firefox") != -1) {
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            }
+        }
+        if (navigator.userAgent.indexOf("Firefox") != -1) {
 
-    //         if (moz == true) {
-    //             toggleFullScreenFF();
-    //             moz = false;
-    //         }
-    //     }
-    // }
+            if (moz == true) {
+                toggleFullScreenFF();
+                moz = false;
+            }
+        }
+    }
 
     document.addEventListener('keyup', function(es) {
         if (es.keyCode == 27) {
@@ -1023,7 +1023,7 @@
     }
     </script>
     <audio autoplay>
-        <!-- <source src="the-calling.mp3" type="audio/mpeg"> -->
+        <source src="the-calling.mp3" type="audio/mpeg">
     </audio>
     <div align="center" class="footer__image">
         <a href="http://www.dmca.com/Protection/Status.aspx?ID=54831afa-95e5-4756-a3e5-9f829e13a1a4" title="DMCA.com Protection Status" class="dmca-badge"> <img src="img/dmc_badge.png" alt="DMCA.com Protection Status"></a>
