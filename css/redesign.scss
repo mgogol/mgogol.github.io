@@ -16,8 +16,8 @@
 }
 
 // Variables =======
-$light-red: #FF7D8C;
-$red: #FF394F;
+$light-red: #FCBF3C;
+$red: #F4791F;
 $black: #1E1E1E;
 $light-grey: #FCFCFC;
 $dark-grey: #F9F9F9;
@@ -65,7 +65,7 @@ body {
 	img {
 		display: inline-block;
 		float: left;
-		max-width: 100%;
+		max-width: 8%;
 		margin-left: 10px;
 	}
 	
@@ -187,7 +187,7 @@ body {
 	a {
 		font-size: 18px;
 		strong {
-			color: #E2001A;
+			color: $red;
 			font-weight: 600;
 		}
 		span {
@@ -259,7 +259,7 @@ body {
 			padding: 20px 30px;
 			margin-top: 20px;
 			border-radius: 8px;
-			background-image: linear-gradient( 195deg, #F31D36 0%, #FF3D53 100%);
+			background-image: linear-gradient( 195deg, #F4791F 0%, #FF7E67 100%);
 			box-shadow: 0 4px 11px #C4C4C4;
 			transition: 0.2s ease-in-out;
 			font-weight: 800;
@@ -394,7 +394,8 @@ body {
 	position: fixed;
 	width: 150px;
 	height: 150px;
-	background-color: #EEEEEE;
+	background-color: #FCFCFC;
+	border: 1px solid $border-color;
 	right: 20px;
 	top: 20px;
 	border-radius: 4px;
@@ -402,6 +403,7 @@ body {
 	text-align: center;
 	font-size: 1.4em;
 	line-height: 1.45em;
+	box-shadow: 0 4px 11px #E9E9E9;
 
 	p {
 		margin: 0;

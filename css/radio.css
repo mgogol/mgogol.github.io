@@ -33,7 +33,7 @@ ul li label{
 }
 
 ul li:hover label{
-  color: #FF394F;
+  color: #F4791F;
 }
 
 ul li .check{
@@ -54,7 +54,7 @@ ul li label a {
 }
 
 ul li:hover .check {
-  border: 3px solid #FF394F;
+  border: 3px solid #F4791F;
 }
 
 ul li .check::before {
@@ -72,5 +72,5 @@ ul li .check::before {
 }
 
 input[type=radio]:checked ~ .check::before{
-  background: #FF394F;
+  background: #F4791F;
 }

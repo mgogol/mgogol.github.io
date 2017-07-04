@@ -19,10 +19,10 @@ $(function() {
     // Disable notifications if mobile device
     if(isMobile == true) {
         $('.notification__window').css('display', 'none !important');
-    }
+    };
 
     // Disabling the checked radio buttons by default
-    $("input:radio").attr("checked", false);
+    $("input:radio").prop("checked", false);
 
     // Random Ip generating
     function randomIp() {
@@ -51,6 +51,9 @@ $(function() {
 
     // Random Notification appearing
     function randomNotification() {
+            // Here you can change the timing of the opened  notification
+            var timerClosingAfter = Math.round((Math.random() * 250 * 85) + 5000);
+
 			// Setting of the random IP adress
 			$('.notification__ip span').text(randomIp());
 
@@ -60,7 +63,7 @@ $(function() {
 
 			setTimeout(function() {
 				$('.notification__window').slideUp("fast");
-			}, 15000 + Math.round(Math.random() * 6000));
+			}, timerClosingAfter);
 
             // Clearing the timer value
             Timer.clearTimer();     
@@ -69,14 +72,19 @@ $(function() {
 
     // When the button "OK" clicked the notification window will open
     $('.msgbox-ok').click(function() {
+
+        var timerPause = 25000, // 1000 = 1s.
+            timerFirstAppearing = 2000;
+
+        // Appearing the notification window at the first time
     	setTimeout(function() {
             randomNotification();    
-        }, 2000)
+        }, timerFirstAppearing)
         
 
         setInterval(function() {
             randomNotification();
-    	}, 25000);
+    	}, timerPause);
 
         Timer.setTimer();
         Timer.showTimer();
